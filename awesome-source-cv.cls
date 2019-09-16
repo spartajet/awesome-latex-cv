@@ -48,8 +48,8 @@
 
 % Dependences
 %A Few Useful Packages
-\RequirePackage[frenchb]{babel}
-\RequirePackage[utf8]{luainputenc}
+\RequirePackage[french]{babel}
+% \RequirePackage[utf8]{luainputenc}
 \RequirePackage{fontspec} 					                 % for loading fonts
 \RequirePackage{url,parskip} 	    % other packages for formatting
 \RequirePackage[usenames,dvipsnames]{xcolor}
@@ -66,7 +66,7 @@
 \RequirePackage[skins]{tcolorbox}
 
 
-\DeclareUnicodeCharacter{00E9}{\'{e}}
+% \DeclareUnicodeCharacter{00E9}{\'{e}}
 % Define default accent colors
 \definecolor{basecolor}{HTML}{000066}       %BLUE
 
@@ -116,7 +116,7 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
-\newfontfamily\FA[Path=fonts/]{FontAwesome}
+\renewfontfamily\FA[Path=fonts/]{FontAwesome}
 
 % Define font to use according to localFont option
 \ifundef{\@local}
